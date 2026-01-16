@@ -24,7 +24,8 @@ M.setup       = function(config, cfg)
     remaps_norm[cfg.key] = cfg.norm_func
 
     waywall.listen("state", function()
-        if not helpers.ingame_only() then
+        local state = waywall.state()
+        if state.screen == "inworld" and state.inworld == "unpaused" then
             waywall.set_remaps(remaps_norm)
         else
             waywall.set_remaps(remaps_chat)
