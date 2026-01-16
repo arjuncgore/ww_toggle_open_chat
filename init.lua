@@ -1,6 +1,6 @@
 -- ==== VARS ====
 local waywall = require("waywall")
-local helpers = require("helpers")
+local helpers = require("waywall.helpers")
 --
 -- local cfg = {
 --     key = "MB5",
