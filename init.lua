@@ -30,6 +30,24 @@ M.setup       = function(config, cfg)
             waywall.set_remaps(remaps_chat)
         end
     end)
+
+    config.actions["I"] = function()
+        for key, val in pairs(config.input.remaps) do
+            print(key .. ": " .. val)
+        end
+    end
+
+    config.actions["O"] = function()
+        for key, val in pairs(remaps_norm) do
+            print(key .. ": " .. val)
+        end
+    end
+
+    config.actions["P"] = function()
+        for key, val in pairs(remaps_chat) do
+            print(key .. ": " .. val)
+        end
+    end
 end
 
 return M
