@@ -1,1 +1,1 @@
-until further notice, this plugin isn't legal
+NOPE IT"S ILLEGAL LMAOOOO
